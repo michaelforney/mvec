@@ -51,7 +51,7 @@ _ZGVbN2v_sin(v2df x)
 v2df
 _ZGVbN2vv_pow(v2df x, v2df y)
 {
-    x[0] = pow(x[0], y[2]);
-    x[1] = pow(x[1], y[3]);
+    x[0] = pow(x[0], y[0]);
+    x[1] = pow(x[1], y[1]);
     return x;
 }
