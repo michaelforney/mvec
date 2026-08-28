@@ -22,6 +22,36 @@ _ZGVbN4v_expf(v4sf x)
 	return x;
 }
 
+v4sf
+_ZGVbN4v_sinf(v4sf x)
+{
+	x[0] = sinf(x[0]);
+	x[1] = sinf(x[1]);
+	x[2] = sinf(x[2]);
+	x[3] = sinf(x[3]);
+	return x;
+}
+
+v4sf
+_ZGVbN4v_cosf(v4sf x)
+{
+	x[0] = cosf(x[0]);
+	x[1] = cosf(x[1]);
+	x[2] = cosf(x[2]);
+	x[3] = cosf(x[3]);
+	return x;
+}
+
+v4sf
+_ZGVbN4v_log10f(v4sf x)
+{
+	x[0] = log10f(x[0]);
+	x[1] = log10f(x[1]);
+	x[2] = log10f(x[2]);
+	x[3] = log10f(x[3]);
+	return x;
+}
+
 v2df
 _ZGVbN2v_log(v2df x)
 {
@@ -37,6 +67,14 @@ _ZGVbN4v_logf(v4sf x)
 	x[1] = logf(x[1]);
 	x[2] = logf(x[2]);
 	x[3] = logf(x[3]);
+	return x;
+}
+
+v2df
+_ZGVbN2v_cos(v2df x)
+{
+	x[0] = cos(x[0]);
+	x[1] = cos(x[1]);
 	return x;
 }
 
